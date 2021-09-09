@@ -1,2 +1,8 @@
 # BetterMsgBot-structure
-BetterMsgBot에서 사용할 표준구조 api 문서입니다.
+## Table
+## Api
+```
+Api.makeToast(str: string): boolean; // Toast 메세지를 만듭니다.
+
+Api.replyRoom(room: string, message: string): boolean; // room으로 message를 보냅니다.
+```
