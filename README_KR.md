@@ -29,7 +29,7 @@
       + `eventType`에 상응하는 이벤트 리스너 등록
       ####
     + `once(eventType, callBack)`
-      + `eventTupe`에 상응하는 *한번만 호출되는* 리스너 등록
+      + `eventType`에 상응하는 *한번만 호출되는* 리스너 등록
 
 ### 확장 API
 + `Languages`
