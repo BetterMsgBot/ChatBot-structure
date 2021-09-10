@@ -1,4 +1,4 @@
-<h1 align="center">📜<br>BetterMsgBot-structure</h1>
+<h1 align="center">📜<br>ChatBot-structure</h1>
 
 <p align="center">
 This documentation defines common API structure used in

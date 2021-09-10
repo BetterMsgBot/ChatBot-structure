@@ -1,4 +1,4 @@
-<h1 align="center">📜<br>BetterMsgBot-structure</h1>
+<h1 align="center">📜<br>ChatBot-structure</h1>
 
 <p align="center">
 이 문서는 'BetterMsgBot' 와 `Project StarLight`에 적용된<br>
