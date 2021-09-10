@@ -5,6 +5,8 @@ This documentation defines common API structure used in
 <br>'BetterMsgBot' and `Project StarLight`
 </p>
 
+> **Note**: This structure is still under development. If there is a structure you want, please put pr without any worries.
+
 ### Structure specification
 + All `core API`s and `extension API`s are packaged in several classes
 which can recognise its usage, not in one Api class
