@@ -31,7 +31,7 @@ which can recognise its usage, not in one Api class
         + `once(eventType, callBack)`
             + Register event listener *called only once* matching `eventType`
 
-### 확장 API
+### Extension API
 + `Languages`
     + Return object for specific language
         + `get()`
