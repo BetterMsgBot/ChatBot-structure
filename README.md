@@ -59,7 +59,7 @@ which can recognise its usage, not in one Api class
 
 ###### /* To be continued.. */
 
-### 이벤트 타입
+### Event types
 + Default event types which can be used on `BotClient`
 + [SpreadSheet document](https://docs.google.com/spreadsheets/d/103k-cqYOIrk9ZpHiu1ZbEKqFNTkxnJXrrPJKfLvxUlY)
 
