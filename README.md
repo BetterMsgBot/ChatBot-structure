@@ -5,63 +5,63 @@ This documentation defines common API structure used in
 <br>'BetterMsgBot' and `Project StarLight`
 </p>
 
-> **Note**: This structure is still under development. If there is a structure you want, please put pr without any worries.
+> **Note**: This structure is still under development. If you want to modify structure, please put PR without any worries.
 
-### Structure specification
-+ All `core API`s and `extension API`s are packaged in several classes
-which can recognise its usage, not in one Api class
-    + ex)
-    + `Projects.get(projectName);`
-    + `Timer.schedule(duration, callback);`
+### Structure design approach
++ Every `core API`s and `extension API`s are grouped into several classes
+with distinct purposes, not into single `Api` class.
+    + Examples
+        + `Projects.get(projectName)`
+        + `Timer.schedule(duration, callback)`
 
 + Uses `EventEmitter` method instead of `Function-based` method used in
-`API1`. Indicating as `BotClient` below in order of convenience.
-> Restricted in `Project StarLight`, `EventEmitter` class offers
+`API 1`. In the following, this new method is designated as `BotClient`.
+> For `Project StarLight`, `EventEmitter` class offers
 > extension support for plugins.
 
-+ Defines an executable programming language object as `Language`
-+ Defines unit for a bot instance as `Project`
-    + `Project` class contains bot configuration and compiled `engine` object
++ Defines an executable programming language object as `Language`.
++ Defines a bot instance as `Project`.
+    + `Project` object includes bot configuration and compiled `engine` object.
 
 ### Core API
 + `BotClient`
-    + `EventEmitter` typed event listener method
-    + Uses event type to register listener callback, which is described below
-        + `on(eventType, callBack)`
-            + Register event listener matching `eventType`
+    + An event listener object of `EventEmitter` system
+    + Uses the event types described below
+        + `on(eventType, callback)`
+            + Registers event listener of `eventType`
           ####
-        + `once(eventType, callBack)`
-            + Register event listener *called only once* matching `eventType`
+        + `once(eventType, callback)`
+            + Registers `one-time` event listener of `eventType`
 
 ### Extension API
 + `Languages`
-    + Return object for specific language
+    + Returns an object for specific language
         + `get()`
-            + Return the language used in current project
+            + Returns the language used in current project
         + `get(languageId)`
-            + Return the language which has `languageId` as its id,
-          returns `null` if not exists
+            + Returns the language whose id is `languageId`,
+          otherwise returns `null`
 ####
 + `Projects`
-    + return object for specific project
+    + Returns an object for specific project
         + `get()`
-        + Return current project
+            + Returns current project
         + `get(projectName)`
-            + Return project named `projectName`, returns `null` if not exists
+            + Returns the project named `projectName`,
+          otherwise returns `null`
 ####
 + `Timer`
-    + Set timer which works asynchronously
+    + Sets the timer which works asynchronously
         + `schedule(delay, callback)`
-            + Run `callback` after `delay` (expressed in millisecond)
+            + Runs `callback` after `delay` (in millisecond)
             + Returns `java.util.Timer`
       ####
         + `schedule(initialDelay, period, callback)`
-            + Run `callback` every `period` after `initialDelay` (expressed in millisecond)
+            + Runs `callback` every `period` after `initialDelay` (in millisecond)
             + Returns `java.util.Timer`
 
 ###### /* To be continued.. */
 
 ### Event types
-+ Default event types which can be used on `BotClient`
-+ [SpreadSheet document](https://docs.google.com/spreadsheets/d/103k-cqYOIrk9ZpHiu1ZbEKqFNTkxnJXrrPJKfLvxUlY)
-
++ Basic event types that can be used on `BotClient`
++ [Spreadsheet document](https://docs.google.com/spreadsheets/d/103k-cqYOIrk9ZpHiu1ZbEKqFNTkxnJXrrPJKfLvxUlY)
