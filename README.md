@@ -45,9 +45,9 @@ with distinct purposes, not into single `Api` class.
 + `Projects`
     + Returns an object for specific project
         + `get()`
-            + Returns current project
+            + Returns current project is `BotProject`
         + `get(projectName)`
-            + Returns the project named `projectName`,
+            + Returns the project named `projectName` is `BotProject`,
           otherwise returns `null`
 ####
 + `Timer`

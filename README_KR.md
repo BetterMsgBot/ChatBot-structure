@@ -44,9 +44,9 @@
 + `Projects`
   + 특정 프로젝트에 대한 객체 반환
     + `get()`
-      + 현재 프로젝트 반환
+      + 현재 프로젝트 반환 이때 `BotProject` 클래스 반환
     + `get(projectName)`
-      + 이름이 `projectName`인 프로젝트 반환, 없을 시 `null` 반환
+      + 이름이 `projectName`인 프로젝트 반환 이때 `BotProject` 클래스 반환, 없을 시 `null` 반환
 ####
 + `Timer`
   + 비동기적으로 작동하는 타이머를 설정함
