@@ -47,6 +47,10 @@
       + 현재 프로젝트 반환 이때 `BotProject` 클래스 반환
     + `get(projectName)`
       + 이름이 `projectName`인 프로젝트 반환 이때 `BotProject` 클래스 반환, 없을 시 `null` 반환
+    + `getUptime()`
+      + 현재 프로젝트의 업타임을 반환
+    + `getUptime(projectName)`
+      + 이름이 `projectName`인 프로젝트의 업타임을 반환, 해당 프로젝트가 없거나 꺼져있다면 `null` 반환
 ####
 + `Timer`
   + 비동기적으로 작동하는 타이머를 설정함

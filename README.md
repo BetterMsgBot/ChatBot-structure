@@ -49,6 +49,11 @@ with distinct purposes, not into single `Api` class.
         + `get(projectName)`
             + Returns the project named `projectName` is `BotProject`,
           otherwise returns `null`
+        + `getUptime()`
+            + Returns current project Uptime
+        + `getUptime(projectName)`
+            + Returns the project named `projectName` Uptime,
+          if project not exists or off project, return `null`
 ####
 + `Timer`
     + Sets the timer which works asynchronously
