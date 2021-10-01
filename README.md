@@ -53,7 +53,7 @@ with distinct purposes, not into single `Api` class.
             + Returns current project Uptime
         + `getUptime(projectName)`
             + Returns the project named `projectName` Uptime,
-          otherwise returns `null`
+          if project not exists or off project, return `null`
 ####
 + `Timer`
     + Sets the timer which works asynchronously
