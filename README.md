@@ -43,17 +43,17 @@ with distinct purposes, not into single `Api` class.
           otherwise returns `null`
 ####
 + `Projects`
-    + Returns an object for specific project
+    + Returns `BotProject` object for specific project
         + `get()`
-            + Returns current project is `BotProject`
+            + Returns the current project
         + `get(projectName)`
-            + Returns the project named `projectName` is `BotProject`,
+            + Returns the project named `projectName`
           otherwise returns `null`
         + `getUptime()`
-            + Returns current project Uptime
+            + Returns the uptime of the current project
         + `getUptime(projectName)`
-            + Returns the project named `projectName` Uptime,
-          if project not exists or off project, return `null`
+            + Returns the uptime of the project named `projectName`,
+            returns `null` if such project doesn't exist, or the project is off
 ####
 + `Timer`
     + Sets the timer which works asynchronously
